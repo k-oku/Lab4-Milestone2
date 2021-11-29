@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             String address = "Could not find address";
+            //error is this line:
             List<Address> listAddresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
 
             if (listAddresses != null && listAddresses.size() > 0) {
